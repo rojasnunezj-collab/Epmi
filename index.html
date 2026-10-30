@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- SEO Primario -->
+  <title>EPMI S.A.C. | Gestión Integral de Residuos Sólidos - EO-RS Autorizada</title>
+  <meta name="title" content="EPMI S.A.C. | Gestión Integral de Residuos Sólidos - EO-RS Autorizada">
+  <meta name="description" content="Empresa Operadora de Residuos Sólidos (EO-RS) en el Perú. Especialistas en recolección, transporte de residuos peligrosos y no peligrosos, valorización y destrucción notarial con total cumplimiento ante OEFA y MINAM.">
+  <meta name="keywords" content="EPMI SAC, gestión de residuos sólidos, EO-RS, residuos peligrosos, disposición final, relleno sanitario, destrucción notarial de mercadería, desmedros SUNAT, valorización de residuos, economía circular Perú, OEFA, MINAM">
+  <meta name="author" content="EPMI S.A.C.">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://rojasnunezj-collab.github.io/Epmi/">
+  <meta property="og:title" content="EPMI S.A.C. | Gestión Integral de Residuos Sólidos - EO-RS Autorizada">
+  <meta property="og:description" content="Soluciones integrales B2B en manejo responsable de residuos sólidos industriales, minería, salud y construcción. Flota propia y certificados oficiales para auditorías.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%230f5132'/><path d='M30 50 A20 20 0 1 1 70 50 A20 20 0 0 1 30 50' fill='none' stroke='%2322c55e' stroke-width='10'/><circle cx='50' cy='50' r='10' fill='%2384cc16'/></svg>">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN con configuración personalizada -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              900: '#062d1b',
+              800: '#0b4226',
+              700: '#0f5132', // Color institucional EPMI
+              600: '#146c43',
+              500: '#198754',
+              accent: '#10b981', // Verde esmeralda conversión
+              lime: '#84cc16',   // Acento geométrico brochure
+              dark: '#0f172a'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Plus Jakarta Sans', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased font-sans selection:bg-brand-accent selection:text-white">
+
+  <!-- Top Bar: Información rápida y credenciales B2B -->
+  <div class="bg-brand-900 text-slate-300 text-xs py-2 px-4 border-b border-brand-800 hidden md:block">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <div class="flex items-center space-x-6">
+        <span class="inline-flex items-center gap-1.5 text-emerald-400 font-semibold">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          Empresa Operadora de Residuos Sólidos (EO-RS) Registrada
+        </span>
+        <span class="text-slate-400">|</span>
+        <span class="flex items-center gap-1 text-slate-300">
+          <i data-lucide="shield-check" class="w-3.5 h-3.5 text-brand-lime"></i> Cobertura en Lima y a Nivel Nacional
+        </span>
+      </div>
+      <div class="flex items-center space-x-6">
+        <a href="tel:+51998257562" class="hover:text-white flex items-center gap-1 transition-colors">
+          <i data-lucide="phone" class="w-3.5 h-3.5 text-emerald-400"></i> +51 998 257 562
+        </a>
+        <a href="mailto:comercial@epmi.com.pe" class="hover:text-white flex items-center gap-1 transition-colors">
+          <i data-lucide="mail" class="w-3.5 h-3.5 text-emerald-400"></i> comercial@epmi.com.pe
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation (Sticky Glassmorphic) -->
+  <header id="navbar" class="sticky top-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        
+        <!-- Logo EPMI Oficial -->
+        <a href="#hero" class="flex items-center gap-3 group">
+          <div class="relative w-11 h-11 flex items-center justify-center rounded-xl bg-gradient-to-br from-brand-700 to-brand-800 shadow-md group-hover:scale-105 transition-transform duration-300">
+            <!-- Icono E estilizado del brochure -->
+            <svg class="w-7 h-7 text-white" viewBox="0 0 100 100" fill="currentColor">
+              <path d="M50 10 A40 40 0 0 0 10 50 A40 40 0 0 0 50 90 A40 40 0 0 0 85 70 L72 62 A25 25 0 0 1 50 75 A25 25 0 0 1 25 50 A25 25 0 0 1 50 25 A25 25 0 0 1 72 38 L85 30 A40 40 0 0 0 50 10 Z" fill="#ffffff" />
+              <circle cx="58" cy="50" r="10" fill="#84cc16" />
+            </svg>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-heading font-extrabold text-2xl tracking-tight text-brand-800 group-hover:text-brand-600 transition-colors">EPMI</span>
+            <span class="text-[10px] tracking-wider uppercase font-semibold text-slate-500 -mt-1">Ingeniería & Residuos</span>
+          </div>
+          <span class="hidden lg:inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-50 text-emerald-700 border border-emerald-200 ml-2">
+            EO-RS
+          </span>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden md:flex items-center space-x-7">
+          <a href="#servicios" class="text-sm font-medium text-slate-700 hover:text-brand-700 transition-colors">Servicios</a>
+          <a href="#entregables" class="text-sm font-medium text-slate-700 hover:text-brand-700 transition-colors">Entregables Legales</a>
+          <a href="#sectores" class="text-sm font-medium text-slate-700 hover:text-brand-700 transition-colors">Sectores</a>
+          <a href="#por-que-epmi" class="text-sm font-medium text-slate-700 hover:text-brand-700 transition-colors">Por Qué Elegirnos</a>
+          <a href="#nosotros" class="text-sm font-medium text-slate-700 hover:text-brand-700 transition-colors">Nosotros</a>
+        </nav>
+
+        <!-- Header Actions: WhatsApp & Cotizar -->
+        <div class="hidden sm:flex items-center gap-3">
+          <a href="https://wa.me/51998257562?text=Hola%20EPMI,%20deseo%20solicitar%20informaci%C3%B3n%20para%20la%20gesti%C3%B3n%20de%20residuos%20de%20mi%20empresa." 
+             target="_blank" rel="noopener noreferrer" 
+             class="inline-flex items-center gap-1.5 px-3 py-2 text-sm font-medium text-emerald-700 hover:bg-emerald-50 rounded-lg transition-colors border border-emerald-200">
+            <i data-lucide="message-circle" class="w-4 h-4 text-emerald-600"></i>
+            <span>WhatsApp</span>
+          </a>
+          <a href="#contacto" class="btn-shimmer inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-semibold text-white bg-gradient-to-r from-brand-700 to-brand-600 hover:from-brand-800 hover:to-brand-700 shadow-md shadow-brand-700/20 hover:shadow-lg transition-all duration-300">
+            <span>Cotizar Servicio</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-btn" type="button" aria-label="Abrir menú" class="md:hidden p-2 rounded-lg text-slate-600 hover:text-brand-800 hover:bg-slate-100 focus:outline-none">
+          <i data-lucide="menu" id="menu-icon" class="w-6 h-6"></i>
+        </button>
+
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobile-menu" class="hidden md:hidden border-b border-slate-200 bg-white px-4 pt-2 pb-6 space-y-3 transition-all duration-300">
+      <a href="#servicios" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-emerald-50 hover:text-brand-700">Servicios</a>
+      <a href="#entregables" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-emerald-50 hover:text-brand-700">Entregables Oficiales</a>
+      <a href="#sectores" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-emerald-50 hover:text-brand-700">Sectores</a>
+      <a href="#por-que-epmi" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-emerald-50 hover:text-brand-700">Por Qué Elegirnos</a>
+      <a href="#nosotros" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-emerald-50 hover:text-brand-700">Nosotros</a>
+      <div class="pt-4 border-t border-slate-100 flex flex-col gap-2">
+        <a href="https://wa.me/51998257562?text=Hola%20EPMI,%20deseo%20solicitar%20una%20cotizaci%C3%B3n." target="_blank" class="flex items-center justify-center gap-2 w-full py-2.5 px-4 rounded-lg bg-emerald-50 text-emerald-700 font-semibold text-sm border border-emerald-200">
+          <i data-lucide="message-circle" class="w-4 h-4"></i> Contactar por WhatsApp
+        </a>
+        <a href="#contacto" class="mobile-nav-link flex items-center justify-center gap-2 w-full py-2.5 px-4 rounded-lg bg-brand-700 text-white font-semibold text-sm shadow-md">
+          <i data-lucide="file-text" class="w-4 h-4"></i> Solicitar Cotización B2B
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION: Alta Conversión B2B -->
+  <section id="hero" class="relative pt-12 pb-20 lg:pt-20 lg:pb-28 overflow-hidden bg-gradient-to-b from-white via-slate-50 to-emerald-50/30">
+    <!-- Geometric decorative elements (Inspirados en el brochure de EPMI) -->
+    <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-brand-700/5 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute bottom-10 left-0 -ml-20 w-80 h-80 bg-brand-lime/10 rounded-full blur-2xl pointer-events-none"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Text & Value Proposition (7 cols) -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          
+          <!-- Trust Badge Pill -->
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-100/80 border border-emerald-300 text-brand-800 text-xs sm:text-sm font-semibold shadow-xs animate-fade-in">
+            <span class="flex h-2 w-2 rounded-full bg-emerald-500"></span>
+            Empresa Operadora de Residuos Sólidos (EO-RS) Autorizada
+          </div>
+
+          <!-- Main Heading -->
+          <h1 class="font-heading font-extrabold text-3xl sm:text-4xl lg:text-5xl text-slate-900 leading-tight tracking-tight">
+            Gestión Integral y Certificada de <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-700 via-brand-600 to-emerald-600">Residuos Sólidos</span> para la Industria Peruana
+          </h1>
+
+          <!-- Subheading B2B -->
+          <p class="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+            Brindamos soluciones a la medida en recolección, transporte, valorización y disposición final para residuos <strong>peligrosos y no peligrosos</strong>. Flota propia, personal con SCTR y emisión de documentación oficial requerida por <strong>OEFA, MINAM y SUNAT</strong>.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+            <a href="#contacto" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-bold text-white bg-brand-700 hover:bg-brand-800 shadow-lg shadow-brand-700/25 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300">
+              <i data-lucide="file-check" class="w-5 h-5 text-brand-lime"></i>
+              <span>Solicitar Cotización Inmediata</span>
+            </a>
+            <a href="https://wa.me/51998257562?text=Hola%20EPMI,%20necesito%20asesor%C3%ADa%20para%20la%20gesti%C3%B3n%20de%20residuos%20de%20mi%20empresa." 
+               target="_blank" rel="noopener noreferrer" 
+               class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold text-slate-700 bg-white hover:bg-slate-50 border border-slate-300 shadow-xs hover:border-emerald-400 hover:text-brand-800 transition-all duration-200">
+              <i data-lucide="message-circle" class="w-5 h-5 text-emerald-600"></i>
+              <span>Hablar con un Especialista</span>
+            </a>
+          </div>
+
+          <!-- Feature Bullets (Checkmarks rápidos) -->
+          <div class="pt-4 border-t border-slate-200/80 grid grid-cols-1 sm:grid-cols-3 gap-3 text-left">
+            <div class="flex items-center gap-2">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+              <span class="text-xs text-slate-600 font-medium">Personal con seguro SCTR</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+              <span class="text-xs text-slate-600 font-medium">Flota vehicular propia</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+              <span class="text-xs text-slate-600 font-medium">Rellenos sanitarios autorizados</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Visual Hero Card / Floating KPIs (5 cols) -->
+        <div class="lg:col-span-5 relative">
+          
+          <!-- Main Hero Image Frame with Geometric Polygons -->
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            <div class="relative overflow-hidden rounded-2xl shadow-2xl border-4 border-white bg-slate-900 group">
+              <!-- High-grade industrial waste management photo -->
+              <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=800&q=80" 
+                   alt="Planta de segregación y gestión de residuos industriales EPMI" 
+                   class="w-full h-80 sm:h-96 object-cover opacity-90 group-hover:scale-105 transition-transform duration-700 ease-out">
+              <div class="absolute inset-0 bg-gradient-to-t from-brand-900/90 via-brand-900/40 to-transparent"></div>
+              
+              <!-- Badge overlay en foto -->
+              <div class="absolute bottom-5 left-5 right-5 text-white">
+                <span class="inline-block px-2.5 py-1 rounded bg-brand-lime text-brand-900 font-bold text-xs mb-1">Operatividad 100% Formal</span>
+                <p class="font-heading font-bold text-lg text-white">Seguridad, Trazabilidad y Sostenibilidad</p>
+                <p class="text-xs text-slate-200">Garantizamos actas notariales, manifiestos y boletas de pesaje oficial.</p>
+              </div>
+            </div>
+
+            <!-- Floating Stat Card 1: Experiencia -->
+            <div class="absolute -top-4 -left-4 sm:-left-6 bg-white/95 backdrop-blur-md p-3.5 sm:p-4 rounded-xl shadow-xl border border-slate-100 flex items-center gap-3">
+              <div class="w-10 h-10 rounded-lg bg-emerald-100 flex items-center justify-center text-emerald-700">
+                <i data-lucide="award" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <div class="font-heading font-extrabold text-xl text-slate-900 counter" data-target="5">+5</div>
+                <div class="text-[11px] text-slate-500 font-medium">Años de Trayectoria</div>
+              </div>
+            </div>
+
+            <!-- Floating Stat Card 2: Respaldo Legal -->
+            <div class="absolute -bottom-5 -right-4 sm:-right-6 bg-white/95 backdrop-blur-md p-3.5 sm:p-4 rounded-xl shadow-xl border border-slate-100 flex items-center gap-3">
+              <div class="w-10 h-10 rounded-lg bg-brand-700 flex items-center justify-center text-brand-lime">
+                <i data-lucide="file-badge" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <div class="font-heading font-extrabold text-xl text-slate-900">100%</div>
+                <div class="text-[11px] text-slate-500 font-medium">Cumplimiento OEFA / SUNAT</div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST & REGULATORY BANNER: Respaldos Institucionales del Brochure -->
+  <section class="py-10 bg-white border-y border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-6">
+        <p class="text-xs font-bold uppercase tracking-wider text-slate-500">
+          Operaciones y fiscalización alineadas a los organismos rectores del Perú
+        </p>
+      </div>
+
+      <!-- Regulatory Badges Grid -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 items-center justify-items-center">
+        
+        <!-- MINAM -->
+        <div class="flex items-center gap-3 p-3 rounded-lg border border-slate-100 hover:border-emerald-200 hover:bg-slate-50 transition-all w-full max-w-[220px] justify-center">
+          <div class="w-8 h-8 rounded bg-red-100 text-red-700 flex items-center justify-center font-bold text-xs">PERÚ</div>
+          <div class="text-left">
+            <div class="text-[11px] font-bold text-slate-900 leading-tight">MINAM</div>
+            <div class="text-[10px] text-slate-500 leading-tight">Ministerio del Ambiente</div>
+          </div>
+        </div>
+
+        <!-- OEFA -->
+        <div class="flex items-center gap-3 p-3 rounded-lg border border-slate-100 hover:border-emerald-200 hover:bg-slate-50 transition-all w-full max-w-[220px] justify-center">
+          <div class="w-8 h-8 rounded bg-blue-100 text-blue-800 flex items-center justify-center font-bold text-xs">OEFA</div>
+          <div class="text-left">
+            <div class="text-[11px] font-bold text-slate-900 leading-tight">OEFA</div>
+            <div class="text-[10px] text-slate-500 leading-tight">Fiscalización Ambiental</div>
+          </div>
+        </div>
+
+        <!-- MTC -->
+        <div class="flex items-center gap-3 p-3 rounded-lg border border-slate-100 hover:border-emerald-200 hover:bg-slate-50 transition-all w-full max-w-[220px] justify-center">
+          <div class="w-8 h-8 rounded bg-red-100 text-red-700 flex items-center justify-center font-bold text-xs">MTC</div>
+          <div class="text-left">
+            <div class="text-[11px] font-bold text-slate-900 leading-tight">MTC</div>
+            <div class="text-[10px] text-slate-500 leading-tight">Transportes y Cargas</div>
+          </div>
+        </div>
+
+        <!-- Municipalidad de Lima -->
+        <div class="flex items-center gap-3 p-3 rounded-lg border border-slate-100 hover:border-emerald-200 hover:bg-slate-50 transition-all w-full max-w-[220px] justify-center">
+          <div class="w-8 h-8 rounded bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-xs">MML</div>
+          <div class="text-left">
+            <div class="text-[11px] font-bold text-slate-900 leading-tight">MUNICIPALIDAD</div>
+            <div class="text-[10px] text-slate-500 leading-tight">Metropolitana de Lima</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS: Núcleo del Brochure con Entregables Claros -->
+  <section id="servicios" class="py-20 bg-slate-50 scroll-mt-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="inline-block px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 font-semibold text-xs uppercase tracking-wider mb-3">
+          Nuestros Servicios Especializados
+        </span>
+        <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-slate-900 tracking-tight">
+          Soluciones Integrales para la Gestión de Residuos
+        </h2>
+        <p class="mt-4 text-base sm:text-lg text-slate-600">
+          Servicios diseñados bajo rigurosos protocolos ambientales, seguridad laboral y con la documentación probatoria que tus auditorías exigen.
+        </p>
+      </div>
+
+      <!-- Services Grid (3 Core Pillars from Brochure) -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        
+        <!-- SERVICIO 1: Recolección y Transporte hacia Disposición Final -->
+        <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group hover:-translate-y-1">
+          <div class="relative h-48 overflow-hidden bg-slate-900">
+            <img src="https://images.unsplash.com/photo-1611284446314-60a58ac0deb9?auto=format&fit=crop&w=600&q=80" 
+                 alt="Transporte y recolección de residuos sólidos" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+            <span class="absolute top-4 left-4 bg-brand-700 text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm">
+              Servicio Principal
+            </span>
+          </div>
+
+          <div class="p-6 sm:p-8 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center mb-4">
+                <i data-lucide="truck" class="w-5 h-5"></i>
+              </div>
+              <h3 class="font-heading font-bold text-xl text-slate-900 leading-snug mb-3">
+                Recolección y Transporte hacia Disposición Final
+              </h3>
+              <p class="text-sm text-slate-600 leading-relaxed mb-6">
+                Autorizados como <strong>EO-RS</strong> para el retiro de residuos de carácter <strong>PELIGROSO y NO PELIGROSO</strong> hasta su disposición final en rellenos sanitarios legalmente autorizados.
+              </p>
+
+              <!-- Detalles Clave -->
+              <div class="space-y-2.5 mb-6 text-xs text-slate-700">
+                <div class="flex items-start gap-2">
+                  <i data-lucide="shield-alert" class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5"></i>
+                  <span>Personal con <strong>Seguro SCTR</strong> e implementos EPP reglamentarios.</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <i data-lucide="gauge" class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5"></i>
+                  <span>Moderna flota de vehículos de distintas capacidades.</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <i data-lucide="user-check" class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5"></i>
+                  <span>Supervisión continua por ingenieros y especialistas.</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bloque de Entregables (Brochure pág 3) -->
+            <div class="mt-4 pt-4 border-t border-slate-100 bg-slate-50 -mx-6 -mb-6 p-6 rounded-b-2xl">
+              <h4 class="text-xs font-bold uppercase tracking-wider text-brand-800 mb-2.5 flex items-center gap-1.5">
+                <i data-lucide="file-check-2" class="w-3.5 h-3.5 text-emerald-600"></i> Entregables Oficiales:
+              </h4>
+              <ul class="text-xs space-y-1.5 text-slate-600">
+                <li class="flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-brand-accent"></span>
+                  <span>Certificado de Manejo de Residuos (EO-RS).</span>
+                </li>
+                <li class="flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-brand-accent"></span>
+                  <span>Constancia de Disposición Final en Relleno Sanitario.</span>
+                </li>
+                <li class="flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-brand-accent"></span>
+                  <span>Boleta de Pesaje oficial del relleno.</span>
+                </li>
+                <li class="flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-brand-accent"></span>
+                  <span>Manifiesto de Residuos Peligrosos (si aplica).</span>
+                </li>
+              </ul>
+              <a href="#contacto" class="mt-4 block text-center w-full py-2 px-3 text-xs font-bold text-brand-700 bg-emerald-100/70 hover:bg-emerald-200 rounded-lg transition-colors">
+                Cotizar Recolección &rarr;
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- SERVICIO 2: Comercialización de Residuos Aprovechables -->
+        <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group hover:-translate-y-1">
+          <div class="relative h-48 overflow-hidden bg-slate-900">
+            <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=600&q=80" 
+                 alt="Reciclaje y valorización de residuos aprovechables" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+            <span class="absolute top-4 left-4 bg-emerald-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm">
+              Economía Circular
+            </span>
+          </div>
+
+          <div class="p-6 sm:p-8 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="w-10 h-10 rounded-xl bg-lime-100 text-lime-800 flex items-center justify-center mb-4">
+                <i data-lucide="refresh-cw" class="w-5 h-5"></i>
+              </div>
+              <h3 class="font-heading font-bold text-xl text-slate-900 leading-snug mb-3">
+                Comercialización de Residuos Aprovechables
+              </h3>
+              <p class="text-sm text-slate-600 leading-relaxed mb-6">
+                Priorizamos la <strong>valorización</strong> de residuos para reducir el impacto ambiental y optimizar costos operativos mediante la recuperación, reciclaje, compostaje y reutilización.
+              </p>
+
+              <!-- Detalles Clave -->
+              <div class="space-y-2.5 mb-6 text-xs text-slate-700">
+                <div class="flex items-start gap-2">
+                  <i data-lucide="package" class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5"></i>
+                  <span>Materiales: <strong>Cartón, papel, plásticos, metales</strong> y más.</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <i data-lucide="leaf" class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5"></i>
+                  <span>Fomento de la economía circular y políticas ESG corporativas.</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <i data-lucide="trending-up" class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5"></i>
+                  <span>Manejo responsable y trazable de cada lote.</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bloque de Entregables (Brochure pág 4) -->
+            <div class="mt-4 pt-4 border-t border-slate-100 bg-slate-50 -mx-6 -mb-6 p-6 rounded-b-2xl">
+              <h4 class="text-xs font-bold uppercase tracking-wider text-brand-800 mb-2.5 flex items-center gap-1.5">
+                <i data-lucide="file-check-2" class="w-3.5 h-3.5 text-emerald-600"></i> Entregables Oficiales:
+              </h4>
+              <ul class="text-xs space-y-1.5 text-slate-600">
+                <li class="flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-brand-accent"></span>
+                  <span>Certificado de Comercialización por EO-RS autorizada.</span>
+                </li>
+                <li class="flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-brand-accent"></span>
+                  <span>Manifiesto de Manejo de Residuos (si corresponde).</span>
+                </li>
+                <li class="flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-brand-accent"></span>
+                  <span>Informe de trazabilidad para reporte de sostenibilidad.</span>
+                </li>
+              </ul>
+              <a href="#contacto" class="mt-4 block text-center w-full py-2 px-3 text-xs font-bold text-brand-700 bg-emerald-100/70 hover:bg-emerald-200 rounded-lg transition-colors">
+                Cotizar Valorización &rarr;
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- SERVICIO 3: Destrucción de Materiales (Desmedros Notariales) -->
+        <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group hover:-translate-y-1">
+          <div class="relative h-48 overflow-hidden bg-slate-900">
+            <img src="https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=600&q=80" 
+                 alt="Destrucción notarial de materiales y desmedros ante SUNAT" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+            <span class="absolute top-4 left-4 bg-amber-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm">
+              Validez Tributaria SUNAT
+            </span>
+          </div>
+
+          <div class="p-6 sm:p-8 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center mb-4">
+                <i data-lucide="file-text" class="w-5 h-5"></i>
+              </div>
+              <h3 class="font-heading font-bold text-xl text-slate-900 leading-snug mb-3">
+                Servicio de Destrucción Notarial de Materiales
+              </h3>
+              <p class="text-sm text-slate-600 leading-relaxed mb-6">
+                Destrucción de mercadería en desuso, vencida o fallada sin valor comercial. Acreditada para <strong>declaraciones tributarias de desmedros ante SUNAT</strong> con notario público.
+              </p>
+
+              <!-- Detalles Clave -->
+              <div class="space-y-2.5 mb-6 text-xs text-slate-700">
+                <div class="flex items-start gap-2">
+                  <i data-lucide="scale" class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5"></i>
+                  <span>Constatación con notarios de la SUNAT o jurisdicción.</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <i data-lucide="shield-check" class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5"></i>
+                  <span>Disposición final en <strong>Relleno de Seguridad</strong> autorizado.</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <i data-lucide="lock" class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5"></i>
+                  <span>Protección total de marca y confidencialidad industrial.</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bloque de Entregables (Brochure pág 5) -->
+            <div class="mt-4 pt-4 border-t border-slate-100 bg-slate-50 -mx-6 -mb-6 p-6 rounded-b-2xl">
+              <h4 class="text-xs font-bold uppercase tracking-wider text-brand-800 mb-2.5 flex items-center gap-1.5">
+                <i data-lucide="file-check-2" class="w-3.5 h-3.5 text-emerald-600"></i> Entregables Oficiales:
+              </h4>
+              <ul class="text-xs space-y-1.5 text-slate-600">
+                <li class="flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-brand-accent"></span>
+                  <span>Certificado de Destrucción de Materiales (EO-RS).</span>
+                </li>
+                <li class="flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-brand-accent"></span>
+                  <span>Acta Notarial de Destrucción constatada.</span>
+                </li>
+                <li class="flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-brand-accent"></span>
+                  <span>Constancia de Disposición en Relleno de Seguridad.</span>
+                </li>
+                <li class="flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-brand-accent"></span>
+                  <span>Boleta de Pesaje del Relleno de Seguridad.</span>
+                </li>
+              </ul>
+              <a href="#contacto" class="mt-4 block text-center w-full py-2 px-3 text-xs font-bold text-brand-700 bg-emerald-100/70 hover:bg-emerald-200 rounded-lg transition-colors">
+                Cotizar Destrucción Notarial &rarr;
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ENTREGABLES LEGALES & CUMPLIMIENTO B2B -->
+  <section id="entregables" class="py-16 bg-white border-t border-slate-200 scroll-mt-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-gradient-to-br from-brand-900 to-slate-900 rounded-3xl p-8 sm:p-12 text-white relative overflow-hidden shadow-2xl">
+        <!-- Background light effect -->
+        <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-brand-accent/20 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
+          <div class="lg:col-span-5 space-y-4">
+            <span class="inline-flex items-center gap-1.5 text-brand-lime font-bold text-xs uppercase tracking-wider">
+              <i data-lucide="shield-check" class="w-4 h-4"></i> Auditorías Sin Contingencias
+            </span>
+            <h3 class="font-heading font-extrabold text-2xl sm:text-3xl text-white leading-tight">
+              Documentación Legal que Garantiza tu Tranquilidad
+            </h3>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              En EPMI S.A.C. emitimos oportunamente toda la documentación física y digital requerida para tus auditorías ambientales, inspecciones municipales y sustentos tributarios ante SUNAT.
+            </p>
+            <div class="pt-2">
+              <a href="#contacto" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold bg-brand-lime text-slate-950 hover:bg-lime-400 transition-colors">
+                <span>Solicitar Asesoría Documentaria</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="p-4 rounded-xl bg-white/10 backdrop-blur-sm border border-white/10">
+              <div class="flex items-center gap-3 mb-2">
+                <i data-lucide="award" class="w-5 h-5 text-brand-lime"></i>
+                <h4 class="font-bold text-sm text-white">Certificado EO-RS</h4>
+              </div>
+              <p class="text-xs text-slate-300">Acredita formalmente el manejo y destino adecuado de cada lote de residuos retirado de tu planta.</p>
+            </div>
+
+            <div class="p-4 rounded-xl bg-white/10 backdrop-blur-sm border border-white/10">
+              <div class="flex items-center gap-3 mb-2">
+                <i data-lucide="file-spreadsheet" class="w-5 h-5 text-brand-lime"></i>
+                <h4 class="font-bold text-sm text-white">Manifiestos Peligrosos</h4>
+              </div>
+              <p class="text-xs text-slate-300">Trazabilidad estricta conforme a la Ley de Gestión Integral de Residuos Sólidos D.L. 1278.</p>
+            </div>
+
+            <div class="p-4 rounded-xl bg-white/10 backdrop-blur-sm border border-white/10">
+              <div class="flex items-center gap-3 mb-2">
+                <i data-lucide="landmark" class="w-5 h-5 text-brand-lime"></i>
+                <h4 class="font-bold text-sm text-white">Actas Notariales SUNAT</h4>
+              </div>
+              <p class="text-xs text-slate-300">Sustento formal e inobjetable para la deducción del Impuesto a la Renta por desmedros de existencias.</p>
+            </div>
+
+            <div class="p-4 rounded-xl bg-white/10 backdrop-blur-sm border border-white/10">
+              <div class="flex items-center gap-3 mb-2">
+                <i data-lucide="scale" class="w-5 h-5 text-brand-lime"></i>
+                <h4 class="font-bold text-sm text-white">Boletas de Pesaje</h4>
+              </div>
+              <p class="text-xs text-slate-300">Comprobantes exactos y homologados de la báscula de pesaje del relleno sanitario autorizado.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTORES QUE ATENDEMOS (Basado en pág 2 del brochure) -->
+  <section id="sectores" class="py-20 bg-slate-50 scroll-mt-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="inline-block px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 font-semibold text-xs uppercase tracking-wider mb-3">
+          Cobertura Multisectorial
+        </span>
+        <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-slate-900 tracking-tight">
+          Sectores Industriales que Confían en EPMI
+        </h2>
+        <p class="mt-4 text-base text-slate-600">
+          Adaptamos nuestra operativa a los más estrictos estándares de seguridad y protocolos internos de cada industria.
+        </p>
+      </div>
+
+      <!-- Sectors Grid -->
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6">
+        
+        <!-- Industria Manufacturera -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 text-center hover:border-emerald-400 hover:shadow-lg transition-all duration-300 group">
+          <div class="w-14 h-14 mx-auto rounded-2xl bg-emerald-50 text-emerald-700 flex items-center justify-center mb-4 group-hover:scale-110 group-hover:bg-brand-700 group-hover:text-white transition-all">
+            <i data-lucide="factory" class="w-7 h-7"></i>
+          </div>
+          <h3 class="font-heading font-bold text-sm sm:text-base text-slate-900 mb-1">Actividad Industrial</h3>
+          <p class="text-xs text-slate-500">Plantas de producción, manufactura y empaque.</p>
+        </div>
+
+        <!-- Minería y Energía -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 text-center hover:border-emerald-400 hover:shadow-lg transition-all duration-300 group">
+          <div class="w-14 h-14 mx-auto rounded-2xl bg-emerald-50 text-emerald-700 flex items-center justify-center mb-4 group-hover:scale-110 group-hover:bg-brand-700 group-hover:text-white transition-all">
+            <i data-lucide="pickaxe" class="w-7 h-7"></i>
+          </div>
+          <h3 class="font-heading font-bold text-sm sm:text-base text-slate-900 mb-1">Minería y Energía</h3>
+          <p class="text-xs text-slate-500">Campamentos, operaciones mineras y mantenimiento pesado.</p>
+        </div>
+
+        <!-- Construcción -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 text-center hover:border-emerald-400 hover:shadow-lg transition-all duration-300 group">
+          <div class="w-14 h-14 mx-auto rounded-2xl bg-emerald-50 text-emerald-700 flex items-center justify-center mb-4 group-hover:scale-110 group-hover:bg-brand-700 group-hover:text-white transition-all">
+            <i data-lucide="hard-hat" class="w-7 h-7"></i>
+          </div>
+          <h3 class="font-heading font-bold text-sm sm:text-base text-slate-900 mb-1">Construcción</h3>
+          <p class="text-xs text-slate-500">Obras civiles, demoliciones y residuos de construcción.</p>
+        </div>
+
+        <!-- Salud y Clínicas -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 text-center hover:border-emerald-400 hover:shadow-lg transition-all duration-300 group">
+          <div class="w-14 h-14 mx-auto rounded-2xl bg-emerald-50 text-emerald-700 flex items-center justify-center mb-4 group-hover:scale-110 group-hover:bg-brand-700 group-hover:text-white transition-all">
+            <i data-lucide="heart-pulse" class="w-7 h-7"></i>
+          </div>
+          <h3 class="font-heading font-bold text-sm sm:text-base text-slate-900 mb-1">Salud y Clínicas</h3>
+          <p class="text-xs text-slate-500">Manejo especializado de residuos biocontaminados.</p>
+        </div>
+
+        <!-- Actividades Especiales y Retail -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 text-center hover:border-emerald-400 hover:shadow-lg transition-all duration-300 group col-span-2 md:col-span-1">
+          <div class="w-14 h-14 mx-auto rounded-2xl bg-emerald-50 text-emerald-700 flex items-center justify-center mb-4 group-hover:scale-110 group-hover:bg-brand-700 group-hover:text-white transition-all">
+            <i data-lucide="store" class="w-7 h-7"></i>
+          </div>
+          <h3 class="font-heading font-bold text-sm sm:text-base text-slate-900 mb-1">Retail & Especiales</h3>
+          <p class="text-xs text-slate-500">Grandes almacenes, centros comerciales y logística.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- POR QUÉ ELEGIRNOS / PILARES OPERATIVOS -->
+  <section id="por-que-epmi" class="py-20 bg-white scroll-mt-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Column: Content & Pillars -->
+        <div class="lg:col-span-6 space-y-6">
+          <span class="inline-block px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 font-semibold text-xs uppercase tracking-wider">
+            Ventajas Competitivas
+          </span>
+          <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-slate-900 tracking-tight">
+            ¿Por Qué EPMI es el Socio Estratégico de su Empresa?
+          </h2>
+          <p class="text-base text-slate-600 leading-relaxed">
+            No solo retiramos residuos; diseñamos una estrategia integral para optimizar costos, mitigar riesgos legales y promover una verdadera economía circular en sus procesos.
+          </p>
+
+          <div class="space-y-4 pt-2">
+            
+            <!-- Pilar 1 -->
+            <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-50 border border-slate-100 hover:border-emerald-300 transition-colors">
+              <div class="w-10 h-10 rounded-lg bg-brand-700 text-white flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="shield-check" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900 text-base">Personal Calificado con SCTR Obligatorio</h4>
+                <p class="text-xs sm:text-sm text-slate-600 mt-1">
+                  Nuestros operarios cuentan con Seguro Complementario de Trabajo de Riesgo, EPPs normados e inducción constante, garantizando cero accidentes en sus instalaciones.
+                </p>
+              </div>
+            </div>
+
+            <!-- Pilar 2 -->
+            <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-50 border border-slate-100 hover:border-emerald-300 transition-colors">
+              <div class="w-10 h-10 rounded-lg bg-brand-700 text-white flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="truck" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900 text-base">Moderna Flota de Vehículos Propios</h4>
+                <p class="text-xs sm:text-sm text-slate-600 mt-1">
+                  Unidades propias acondicionadas y autorizadas para cargas de alto tonelaje y materiales peligrosos, eliminando demoras por tercerización.
+                </p>
+              </div>
+            </div>
+
+            <!-- Pilar 3 -->
+            <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-50 border border-slate-100 hover:border-emerald-300 transition-colors">
+              <div class="w-10 h-10 rounded-lg bg-brand-700 text-white flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="recycle" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900 text-base">Enfoque en Economía Circular</h4>
+                <p class="text-xs sm:text-sm text-slate-600 mt-1">
+                  Reducimos al mínimo el volumen destinado a rellenos sanitarios mediante la valorización responsable de materiales reciclables.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right Column: Visual Process Flow -->
+        <div class="lg:col-span-6 bg-slate-50 p-6 sm:p-8 rounded-3xl border border-slate-200">
+          <div class="text-center mb-6">
+            <h3 class="font-heading font-bold text-xl text-slate-900">Flujo de Trabajo Operativo</h3>
+            <p class="text-xs text-slate-500 mt-1">Protocolo transparente y seguro desde la solicitud hasta el certificado</p>
+          </div>
+
+          <div class="relative space-y-6 before:absolute before:inset-0 before:left-5 before:w-0.5 before:bg-slate-200">
+            
+            <!-- Paso 1 -->
+            <div class="relative flex items-start gap-4 pl-1">
+              <div class="relative z-10 w-8 h-8 rounded-full bg-brand-700 text-brand-lime font-bold text-xs flex items-center justify-center shadow-md">
+                1
+              </div>
+              <div class="bg-white p-4 rounded-xl border border-slate-200 flex-1 shadow-xs">
+                <h5 class="font-bold text-sm text-slate-900">Diagnóstico y Cotización a Medida</h5>
+                <p class="text-xs text-slate-600 mt-1">Evaluamos la tipología, volumen y frecuencia de residuos para diseñar un plan operacional exacto.</p>
+              </div>
+            </div>
+
+            <!-- Paso 2 -->
+            <div class="relative flex items-start gap-4 pl-1">
+              <div class="relative z-10 w-8 h-8 rounded-full bg-brand-700 text-brand-lime font-bold text-xs flex items-center justify-center shadow-md">
+                2
+              </div>
+              <div class="bg-white p-4 rounded-xl border border-slate-200 flex-1 shadow-xs">
+                <h5 class="font-bold text-sm text-slate-900">Retiro y Transporte Seguro</h5>
+                <p class="text-xs text-slate-600 mt-1">Ejecutado por personal equipado con SCTR y flota autorizada hacia el destino final correspondiente.</p>
+              </div>
+            </div>
+
+            <!-- Paso 3 -->
+            <div class="relative flex items-start gap-4 pl-1">
+              <div class="relative z-10 w-8 h-8 rounded-full bg-brand-700 text-brand-lime font-bold text-xs flex items-center justify-center shadow-md">
+                3
+              </div>
+              <div class="bg-white p-4 rounded-xl border border-slate-200 flex-1 shadow-xs">
+                <h5 class="font-bold text-sm text-slate-900">Disposición o Valorización Certificada</h5>
+                <p class="text-xs text-slate-600 mt-1">Ingreso a relleno sanitario/seguridad autorizado con pesaje formal o planta de reciclaje.</p>
+              </div>
+            </div>
+
+            <!-- Paso 4 -->
+            <div class="relative flex items-start gap-4 pl-1">
+              <div class="relative z-10 w-8 h-8 rounded-full bg-emerald-600 text-white font-bold text-xs flex items-center justify-center shadow-md">
+                4
+              </div>
+              <div class="bg-white p-4 rounded-xl border border-emerald-200 flex-1 shadow-xs">
+                <h5 class="font-bold text-sm text-emerald-800">Emisión de Certificados y Manifiestos</h5>
+                <p class="text-xs text-slate-600 mt-1">Entrega del dossier documentario completo y válido para fiscalizaciones de OEFA y SUNAT.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- NOSOTROS: Misión, Visión y Propósito (Brochure pág 2) -->
+  <section id="nosotros" class="py-20 bg-gradient-to-b from-slate-50 to-white border-t border-slate-200 scroll-mt-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-5 relative">
+          <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-slate-900">
+            <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=800&q=80" 
+                 alt="Compromiso ambiental de EPMI S.A.C." 
+                 class="w-full h-96 object-cover opacity-90">
+            <div class="absolute inset-0 bg-gradient-to-t from-brand-900/90 to-transparent"></div>
+            <div class="absolute bottom-6 left-6 right-6 text-white">
+              <div class="flex items-center gap-2 mb-1">
+                <i data-lucide="check-circle" class="w-4 h-4 text-brand-lime"></i>
+                <span class="text-xs font-bold uppercase tracking-wider text-brand-lime">Empresa 100% Peruana</span>
+              </div>
+              <h3 class="font-heading font-bold text-2xl text-white">EPMI S.A.C.</h3>
+              <p class="text-xs text-slate-200 mt-1">Más de 5 años comprometidos con la excelencia ambiental y el desarrollo sostenible de la industria nacional.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 space-y-6">
+          <span class="inline-block px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 font-semibold text-xs uppercase tracking-wider">
+            Conoce a EPMI S.A.C.
+          </span>
+          <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-slate-900 tracking-tight">
+            Ingeniería Ambiental con Conciencia y Responsabilidad
+          </h2>
+          <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
+            La empresa <strong>EPMI S.A.C.</strong> es una empresa peruana dedicada a la gestión responsable del manejo de residuos sólidos con más de 5 años de experiencia. Brindamos soluciones integrales a la medida de nuestros clientes, reduciendo al mínimo la cantidad de residuos sólidos que terminarán en rellenos sanitarios mediante la valorización continua.
+          </p>
+
+          <!-- Grid Misión, Visión, Propósito -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
+            
+            <!-- Misión -->
+            <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-xs">
+              <div class="w-8 h-8 rounded-lg bg-emerald-100 text-brand-700 flex items-center justify-center mb-3">
+                <i data-lucide="target" class="w-4 h-4"></i>
+              </div>
+              <h4 class="font-heading font-bold text-sm text-slate-900 mb-2">Misión</h4>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Prestar servicios de excelencia en manejo y comercialización de residuos sólidos a nivel nacional, bajo la legislación vigente, cuidando el ambiente y clima laboral.
+              </p>
+            </div>
+
+            <!-- Visión -->
+            <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-xs">
+              <div class="w-8 h-8 rounded-lg bg-emerald-100 text-brand-700 flex items-center justify-center mb-3">
+                <i data-lucide="compass" class="w-4 h-4"></i>
+              </div>
+              <h4 class="font-heading font-bold text-sm text-slate-900 mb-2">Visión</h4>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Ser reconocidos como una referencia en nuestro país en gestión integral de residuos sólidos, con un sólido enfoque centrado en nuestros clientes.
+              </p>
+            </div>
+
+            <!-- Propósito -->
+            <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-xs">
+              <div class="w-8 h-8 rounded-lg bg-emerald-100 text-brand-700 flex items-center justify-center mb-3">
+                <i data-lucide="sparkles" class="w-4 h-4"></i>
+              </div>
+              <h4 class="font-heading font-bold text-sm text-slate-900 mb-2">Propósito</h4>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Lograr una eficiente economía circular en nuestros procesos y compartir el conocimiento técnico con cada uno de nuestros clientes.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FORMULARIO DE COTIZACIÓN B2B Y CONTACTO DIRECTO -->
+  <section id="contacto" class="py-20 bg-slate-900 text-white relative overflow-hidden scroll-mt-16">
+    <!-- Background styling and blur -->
+    <div class="absolute -top-40 -right-40 w-96 h-96 bg-brand-700/20 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        <!-- Contact Info Column (5 cols) -->
+        <div class="lg:col-span-5 space-y-6">
+          <span class="inline-block px-3 py-1 rounded-full bg-brand-lime/20 text-brand-lime font-semibold text-xs uppercase tracking-wider">
+            Atención Inmediata
+          </span>
+          <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-white tracking-tight leading-tight">
+            Comencemos a Optimizar la Gestión Ambiental de su Empresa
+          </h2>
+          <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
+            Póngase en contacto con nuestro equipo comercial y técnico para recibir una propuesta formal y personalizada de recolección, valorización o destrucción notarial.
+          </p>
+
+          <!-- Contact Cards -->
+          <div class="space-y-4 pt-2">
+            
+            <!-- Teléfono & WhatsApp -->
+            <a href="https://wa.me/51998257562?text=Hola%20EPMI,%20deseo%20cotizar%20servicios%20de%20gesti%C3%B3n%20de%20residuos." 
+               target="_blank" rel="noopener noreferrer" 
+               class="flex items-center gap-4 p-4 rounded-xl bg-slate-800/80 border border-slate-700 hover:border-emerald-400 hover:bg-slate-800 transition-all group">
+              <div class="w-12 h-12 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                <i data-lucide="phone-call" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <span class="text-xs text-slate-400 block">Teléfono / WhatsApp Directo</span>
+                <span class="font-heading font-bold text-lg text-white group-hover:text-emerald-400 transition-colors">+51 998 257 562</span>
+              </div>
+            </a>
+
+            <!-- Correos Comerciales -->
+            <div class="p-4 rounded-xl bg-slate-800/80 border border-slate-700 space-y-2">
+              <div class="flex items-center gap-4">
+                <div class="w-12 h-12 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0">
+                  <i data-lucide="mail" class="w-6 h-6"></i>
+                </div>
+                <div>
+                  <span class="text-xs text-slate-400 block">Correos Corporativos</span>
+                  <a href="mailto:comercial@epmi.com.pe" class="font-semibold text-sm text-white hover:text-emerald-400 block transition-colors">
+                    comercial@epmi.com.pe
+                  </a>
+                  <a href="mailto:helver.pongo@epmi.com.pe" class="font-semibold text-sm text-slate-300 hover:text-emerald-400 block transition-colors">
+                    helver.pongo@epmi.com.pe
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Ubicación -->
+            <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-800/80 border border-slate-700">
+              <div class="w-12 h-12 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="map-pin" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <span class="text-xs text-slate-400 block">Oficina & Operaciones</span>
+                <p class="text-xs sm:text-sm text-slate-200 leading-snug">
+                  Mza. C, Lote 01 – A Saracoto Alto, Distrito de San Antonio, Provincia de Huarochirí, Departamento de Lima.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Conversion Form Column (7 cols) -->
+        <div class="lg:col-span-7">
+          <div class="bg-white text-slate-800 p-6 sm:p-10 rounded-3xl shadow-2xl border border-slate-100">
+            <div class="mb-6">
+              <h3 class="font-heading font-extrabold text-2xl text-slate-900">Solicitud de Cotización B2B</h3>
+              <p class="text-xs sm:text-sm text-slate-500 mt-1">Complete los datos de su empresa y un asesor técnico responderá en menos de 2 horas hábiles.</p>
+            </div>
+
+            <!-- Formulario Funcional con Formspree / Web3Forms -->
+            <form id="contact-form" action="https://formspree.io/f/xvgzgopq" method="POST" class="space-y-4">
+              
+              <!-- Hidden fields para configurar destino en Formspree -->
+              <input type="hidden" name="_subject" value="Nuevo Lead B2B - Cotización Web EPMI">
+              <input type="hidden" name="_replyto" id="hidden_replyto">
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <!-- Nombre -->
+                <div>
+                  <label for="nombre" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Nombre y Apellidos *</label>
+                  <input type="text" id="nombre" name="nombre" required 
+                         placeholder="Ej: Ing. Carlos Ramos" 
+                         class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-700 focus:border-brand-700 text-sm outline-none transition-all">
+                </div>
+
+                <!-- Empresa y RUC -->
+                <div>
+                  <label for="empresa" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Empresa / RUC *</label>
+                  <input type="text" id="empresa" name="empresa" required 
+                         placeholder="Ej: Minera del Centro S.A. / 20123456789" 
+                         class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-700 focus:border-brand-700 text-sm outline-none transition-all">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <!-- Correo Corporativo -->
+                <div>
+                  <label for="email" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Correo Corporativo *</label>
+                  <input type="email" id="email" name="email" required 
+                         placeholder="carlos.ramos@empresa.com" 
+                         class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-700 focus:border-brand-700 text-sm outline-none transition-all">
+                </div>
+
+                <!-- Teléfono / WhatsApp -->
+                <div>
+                  <label for="telefono" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Teléfono / WhatsApp *</label>
+                  <input type="tel" id="telefono" name="telefono" required 
+                         placeholder="+51 987 654 321" 
+                         class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-700 focus:border-brand-700 text-sm outline-none transition-all">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <!-- Tipo de Servicio Requerido -->
+                <div>
+                  <label for="servicio" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Servicio Requerido *</label>
+                  <select id="servicio" name="servicio" required 
+                          class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-700 focus:border-brand-700 text-sm outline-none transition-all bg-white">
+                    <option value="" disabled selected>Seleccione una opción...</option>
+                    <option value="Recoleccion y Transporte Peligrosos/No Peligrosos">Recolección & Transporte (Peligrosos / No Peligrosos)</option>
+                    <option value="Comercializacion y Valorizacion">Comercialización y Valorización (Reciclaje)</option>
+                    <option value="Destruccion Notarial SUNAT">Destrucción Notarial de Materiales (SUNAT)</option>
+                    <option value="Servicio Integral de Residuos">Gestión Integral de Planta (Servicio Completo)</option>
+                  </select>
+                </div>
+
+                <!-- Volumen Estimado / Frecuencia -->
+                <div>
+                  <label for="frecuencia" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Volumen / Frecuencia</label>
+                  <input type="text" id="frecuencia" name="frecuencia" 
+                         placeholder="Ej: 5 Toneladas mensuales / Retiro puntual" 
+                         class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-700 focus:border-brand-700 text-sm outline-none transition-all">
+                </div>
+              </div>
+
+              <!-- Mensaje / Detalles -->
+              <div>
+                <label for="mensaje" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Detalle del Requerimiento</label>
+                <textarea id="mensaje" name="mensaje" rows="3" 
+                          placeholder="Indique tipo de residuo, ubicación del punto de recojo y cualquier requerimiento específico de seguridad o certificación..." 
+                          class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-700 focus:border-brand-700 text-sm outline-none transition-all resize-none"></textarea>
+              </div>
+
+              <!-- Checkbox Política Privacidad -->
+              <div class="flex items-center gap-2 text-xs text-slate-500">
+                <input type="checkbox" id="politica" name="politica" required class="rounded text-brand-700 focus:ring-brand-700">
+                <label for="politica">Acepto el tratamiento de mis datos de contacto conforme a la Ley N° 29733 de Protección de Datos Personales.</label>
+              </div>
+
+              <!-- Botón Submit -->
+              <div>
+                <button type="submit" id="submit-btn" 
+                        class="w-full py-3.5 px-6 rounded-xl font-bold text-white bg-gradient-to-r from-brand-700 to-brand-600 hover:from-brand-800 hover:to-brand-700 shadow-lg shadow-brand-700/25 hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2">
+                  <i data-lucide="send" class="w-4 h-4"></i>
+                  <span id="btn-text">Enviar Solicitud de Cotización</span>
+                </button>
+              </div>
+
+              <!-- Feedback Messages -->
+              <div id="form-feedback" class="hidden p-4 rounded-xl text-xs font-medium text-center"></div>
+
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER INSTITUCIONAL -->
+  <footer class="bg-slate-950 text-slate-400 text-xs py-14 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        
+        <!-- Columna 1: Brand & Descripción -->
+        <div class="space-y-3">
+          <div class="flex items-center gap-2.5">
+            <div class="w-8 h-8 rounded-lg bg-brand-700 flex items-center justify-center text-white">
+              <i data-lucide="leaf" class="w-4 h-4 text-brand-lime"></i>
+            </div>
+            <span class="font-heading font-extrabold text-xl text-white tracking-tight">EPMI S.A.C.</span>
+          </div>
+          <p class="text-slate-400 leading-relaxed">
+            Empresa Operadora de Residuos Sólidos (EO-RS). Especializados en recolección, transporte, valorización y disposición final para la industria peruana.
+          </p>
+          <span class="inline-block text-[11px] text-emerald-400 font-semibold">RUC: 20600000000 (EPMI S.A.C.)</span>
+        </div>
+
+        <!-- Columna 2: Enlaces Rápidos -->
+        <div>
+          <h4 class="font-bold text-white uppercase tracking-wider text-xs mb-3">Navegación</h4>
+          <ul class="space-y-2">
+            <li><a href="#hero" class="hover:text-emerald-400 transition-colors">Inicio</a></li>
+            <li><a href="#servicios" class="hover:text-emerald-400 transition-colors">Servicios Principales</a></li>
+            <li><a href="#entregables" class="hover:text-emerald-400 transition-colors">Entregables & Certificados</a></li>
+            <li><a href="#sectores" class="hover:text-emerald-400 transition-colors">Sectores Atendidos</a></li>
+            <li><a href="#por-que-epmi" class="hover:text-emerald-400 transition-colors">Por Qué Elegirnos</a></li>
+            <li><a href="#nosotros" class="hover:text-emerald-400 transition-colors">Misión y Visión</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna 3: Servicios Oficiales -->
+        <div>
+          <h4 class="font-bold text-white uppercase tracking-wider text-xs mb-3">Líneas de Servicio</h4>
+          <ul class="space-y-2">
+            <li>Recolección y Transporte de Residuos</li>
+            <li>Residuos Peligrosos y No Peligrosos</li>
+            <li>Comercialización de Aprovechables</li>
+            <li>Economía Circular y Valorización</li>
+            <li>Destrucción Notarial para SUNAT</li>
+            <li>Asesoría en Cumplimiento SSOMA</li>
+          </ul>
+        </div>
+
+        <!-- Columna 4: Legal & Contacto -->
+        <div>
+          <h4 class="font-bold text-white uppercase tracking-wider text-xs mb-3">Contacto Corporativo</h4>
+          <p class="text-slate-300 leading-relaxed mb-2">
+            Mza. C, Lote 01 – A Saracoto Alto, San Antonio, Huarochirí, Lima.
+          </p>
+          <p class="text-slate-300 mb-1">Central: +51 998 257 562</p>
+          <p class="text-slate-300 mb-1">Email: comercial@epmi.com.pe</p>
+          <div class="mt-4 flex gap-2">
+            <span class="inline-block px-2 py-1 rounded bg-slate-800 text-[10px] text-slate-300 border border-slate-700">D.L. 1278</span>
+            <span class="inline-block px-2 py-1 rounded bg-slate-800 text-[10px] text-slate-300 border border-slate-700">Ley Residuos Sólidos</span>
+            <span class="inline-block px-2 py-1 rounded bg-slate-800 text-[10px] text-slate-300 border border-slate-700">OEFA</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="border-t border-slate-800 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-slate-500">
+        <p>&copy; 2026 EPMI S.A.C. Todos los derechos reservados. Desarrollado para GitHub Pages.</p>
+        <p class="text-[11px]">Diseño y Arquitectura de Alta Conversión B2B.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP CTA BUTTON -->
+  <a href="https://wa.me/51998257562?text=Hola%20EPMI,%20deseo%20solicitar%20una%20cotizaci%C3%B3n%20para%20la%20gesti%C3%B3n%20de%20residuos%20de%20mi%20empresa." 
+     target="_blank" rel="noopener noreferrer" 
+     class="whatsapp-float fixed bottom-6 right-6 z-50 flex items-center gap-2 bg-[#25D366] text-white py-3 px-4 rounded-full shadow-2xl hover:bg-[#20ba59] transition-all duration-300 hover:scale-105 group"
+     aria-label="Contactar por WhatsApp">
+    <i data-lucide="message-circle" class="w-6 h-6"></i>
+    <span class="hidden sm:inline-block font-bold text-xs">¿Cotización rápida? Escríbenos</span>
+  </a>
+
+  <!-- Custom Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

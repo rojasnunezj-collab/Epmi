@@ -1,0 +1,14 @@
+# Archivos del sistema y editores
+.DS_Store
+Thumbs.db
+*.log
+
+# Entornos y dependencias de IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Builds temporales
+dist/
+tmp/
