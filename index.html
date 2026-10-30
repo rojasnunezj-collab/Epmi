@@ -87,17 +87,17 @@
     </div>
   </div>
 
-  <!-- Main Navigation (Sticky Glassmorphic) -->
-  <header id="navbar" class="sticky top-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-xs">
+  <!-- Main Navigation (Solid Opaque Sticky Header - Sin transparencias) -->
+  <header id="navbar" class="sticky top-0 z-50 transition-all duration-200 bg-white border-b border-slate-200 shadow-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-20">
         
         <!-- Logo EPMI Oficial del Brochure -->
-        <a href="#hero" class="flex items-center gap-3 group">
-          <img src="assets/images/logo-epmi.png" alt="EPMI S.A.C. - Gestión Integral de Residuos" class="h-14 w-auto object-contain group-hover:scale-105 transition-transform duration-300">
-          <div class="hidden sm:flex flex-col">
-            <span class="font-heading font-extrabold text-xl tracking-tight text-brand-800">EPMI S.A.C.</span>
-            <span class="text-[9px] tracking-wider uppercase font-semibold text-slate-500 -mt-1">R.A. EO-RS-00211-2022-MINAM</span>
+        <a href="#hero" class="flex items-center gap-2.5 sm:gap-3 group">
+          <img src="assets/images/logo-epmi.png" alt="EPMI S.A.C." class="h-11 sm:h-13 w-auto object-contain">
+          <div class="flex flex-col">
+            <span class="font-heading font-extrabold text-base sm:text-xl tracking-tight text-brand-800 leading-tight">EPMI S.A.C.</span>
+            <span class="text-[8px] sm:text-[9px] tracking-wider uppercase font-semibold text-emerald-700 leading-tight">EO-RS-00211-2022-MINAM</span>
           </div>
         </a>
 
@@ -210,45 +210,50 @@
 
         </div>
 
-        <!-- Visual Hero Card / Floating KPIs (5 cols) -->
-        <div class="lg:col-span-5 relative">
+        <!-- Hero Visual with Clean Non-Overlapping Layout (5 cols) -->
+        <div class="lg:col-span-5 relative mt-6 lg:mt-0">
           
-          <!-- Main Hero Image Frame with Geometric Polygons -->
-          <div class="relative mx-auto max-w-md lg:max-w-none">
-            <div class="relative overflow-hidden rounded-2xl shadow-2xl border-4 border-white bg-slate-900 group">
-              <!-- High-grade industrial waste management photo -->
+          <div class="relative mx-auto max-w-lg lg:max-w-none">
+            <!-- Main Hero Image Frame -->
+            <div class="relative overflow-hidden rounded-2xl shadow-xl border-4 border-white bg-slate-900">
               <img src="assets/images/hero-sorting-line.jpg" 
                    alt="Planta de segregación y gestión de residuos industriales EPMI" 
-                   class="w-full h-80 sm:h-96 object-cover opacity-90 group-hover:scale-105 transition-transform duration-700 ease-out">
-              <div class="absolute inset-0 bg-gradient-to-t from-brand-900/90 via-brand-900/40 to-transparent"></div>
+                   class="w-full h-72 sm:h-80 md:h-96 object-cover">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/75 via-transparent to-transparent"></div>
               
-              <!-- Badge overlay en foto -->
-              <div class="absolute bottom-5 left-5 right-5 text-white">
-                <span class="inline-block px-2.5 py-1 rounded bg-brand-lime text-brand-900 font-bold text-xs mb-1">Operatividad 100% Formal</span>
-                <p class="font-heading font-bold text-lg text-white">Seguridad, Trazabilidad y Sostenibilidad</p>
-                <p class="text-xs text-slate-200">Garantizamos actas notariales, manifiestos y boletas de pesaje oficial.</p>
+              <!-- Clean single pill at top -->
+              <div class="absolute top-4 left-4 bg-brand-900/90 backdrop-blur-sm text-brand-lime text-xs font-bold px-3 py-1.5 rounded-lg border border-brand-lime/30 flex items-center gap-1.5 shadow-sm">
+                <span class="w-2 h-2 rounded-full bg-brand-lime animate-pulse"></span>
+                <span>Operatividad 100% Formal</span>
+              </div>
+
+              <!-- Clear bottom title that is never obscured -->
+              <div class="absolute bottom-4 left-4 right-4 text-white">
+                <p class="font-heading font-bold text-base sm:text-lg text-white">Seguridad, Trazabilidad y Sostenibilidad</p>
+                <p class="text-xs text-slate-200">Actas notariales, manifiestos y boletas de pesaje oficial.</p>
               </div>
             </div>
 
-            <!-- Floating Stat Card 1: Experiencia -->
-            <div class="absolute -top-4 -left-4 sm:-left-6 bg-white/95 backdrop-blur-md p-3.5 sm:p-4 rounded-xl shadow-xl border border-slate-100 flex items-center gap-3">
-              <div class="w-10 h-10 rounded-lg bg-emerald-100 flex items-center justify-center text-emerald-700">
-                <i data-lucide="award" class="w-6 h-6"></i>
+            <!-- Stats Grid Below Image (Zero Overlap, Fully Mobile Responsive) -->
+            <div class="grid grid-cols-2 gap-3 mt-3">
+              <div class="bg-white p-3.5 sm:p-4 rounded-xl shadow-md border border-slate-100 flex items-center gap-3">
+                <div class="w-10 h-10 rounded-lg bg-emerald-100 flex items-center justify-center text-emerald-700 shrink-0">
+                  <i data-lucide="award" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <div class="font-heading font-extrabold text-xl text-slate-900 counter" data-target="5">+5</div>
+                  <div class="text-[11px] text-slate-500 font-medium leading-tight">Años de Trayectoria</div>
+                </div>
               </div>
-              <div>
-                <div class="font-heading font-extrabold text-xl text-slate-900 counter" data-target="5">+5</div>
-                <div class="text-[11px] text-slate-500 font-medium">Años de Trayectoria</div>
-              </div>
-            </div>
 
-            <!-- Floating Stat Card 2: Respaldo Legal -->
-            <div class="absolute -bottom-5 -right-4 sm:-right-6 bg-white/95 backdrop-blur-md p-3.5 sm:p-4 rounded-xl shadow-xl border border-slate-100 flex items-center gap-3">
-              <div class="w-10 h-10 rounded-lg bg-brand-700 flex items-center justify-center text-brand-lime">
-                <i data-lucide="file-badge" class="w-6 h-6"></i>
-              </div>
-              <div>
-                <div class="font-heading font-extrabold text-xl text-slate-900">100%</div>
-                <div class="text-[11px] text-slate-500 font-medium">Cumplimiento OEFA / SUNAT</div>
+              <div class="bg-white p-3.5 sm:p-4 rounded-xl shadow-md border border-slate-100 flex items-center gap-3">
+                <div class="w-10 h-10 rounded-lg bg-brand-700 flex items-center justify-center text-brand-lime shrink-0">
+                  <i data-lucide="shield-check" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <div class="font-heading font-extrabold text-xl text-slate-900 leading-tight">100%</div>
+                  <div class="text-[11px] text-slate-500 font-medium leading-tight">Cumplimiento OEFA/SUNAT</div>
+                </div>
               </div>
             </div>
 
@@ -269,27 +274,27 @@
         </p>
       </div>
 
-      <!-- Regulatory Badges Grid (Logos Reales del Brochure Pág. 6) -->
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 items-center justify-items-center">
+      <!-- Regulatory Badges Grid (Logos Oficiales Completos del Brochure Pág. 6) -->
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6 items-center justify-items-center">
         
         <!-- MINAM -->
-        <div class="flex items-center justify-center p-3 rounded-xl border border-slate-200 hover:border-emerald-300 hover:bg-slate-50 transition-all w-full max-w-[230px] h-16 bg-white shadow-xs">
-          <img src="assets/images/logo-minam.jpg" alt="MINAM - Ministerio del Ambiente" class="max-h-10 w-auto object-contain">
+        <div class="flex items-center justify-center p-3 sm:p-4 rounded-xl border border-slate-200 hover:border-emerald-300 hover:bg-slate-50 transition-all w-full max-w-[250px] h-20 bg-white shadow-xs">
+          <img src="assets/images/logo-minam.png" alt="MINAM - Ministerio del Ambiente" class="max-h-12 max-w-[92%] w-auto object-contain">
         </div>
 
         <!-- MTC -->
-        <div class="flex items-center justify-center p-3 rounded-xl border border-slate-200 hover:border-emerald-300 hover:bg-slate-50 transition-all w-full max-w-[230px] h-16 bg-white shadow-xs">
-          <img src="assets/images/logo-mtc.jpg" alt="MTC - Ministerio de Transportes y Comunicaciones" class="max-h-10 w-auto object-contain">
+        <div class="flex items-center justify-center p-3 sm:p-4 rounded-xl border border-slate-200 hover:border-emerald-300 hover:bg-slate-50 transition-all w-full max-w-[250px] h-20 bg-white shadow-xs">
+          <img src="assets/images/logo-mtc.png" alt="MTC - Ministerio de Transportes y Comunicaciones" class="max-h-12 max-w-[92%] w-auto object-contain">
         </div>
 
         <!-- Municipalidad de Lima -->
-        <div class="flex items-center justify-center p-3 rounded-xl border border-slate-200 hover:border-emerald-300 hover:bg-slate-50 transition-all w-full max-w-[230px] h-16 bg-white shadow-xs">
-          <img src="assets/images/logo-mml.jpg" alt="Municipalidad Metropolitana de Lima" class="max-h-10 w-auto object-contain">
+        <div class="flex items-center justify-center p-3 sm:p-4 rounded-xl border border-slate-200 hover:border-emerald-300 hover:bg-slate-50 transition-all w-full max-w-[250px] h-20 bg-white shadow-xs">
+          <img src="assets/images/logo-mml.png" alt="Municipalidad Metropolitana de Lima" class="max-h-12 max-w-[92%] w-auto object-contain">
         </div>
 
         <!-- OEFA -->
-        <div class="flex items-center justify-center p-3 rounded-xl border border-slate-200 hover:border-emerald-300 hover:bg-slate-50 transition-all w-full max-w-[230px] h-16 bg-white shadow-xs">
-          <img src="assets/images/logo-oefa.jpg" alt="OEFA - Organismo de Evaluación y Fiscalización Ambiental" class="max-h-10 w-auto object-contain">
+        <div class="flex items-center justify-center p-3 sm:p-4 rounded-xl border border-slate-200 hover:border-emerald-300 hover:bg-slate-50 transition-all w-full max-w-[250px] h-20 bg-white shadow-xs">
+          <img src="assets/images/logo-oefa.png" alt="OEFA - Organismo de Evaluación y Fiscalización Ambiental" class="max-h-12 max-w-[92%] w-auto object-contain">
         </div>
 
       </div>

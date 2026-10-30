@@ -27,15 +27,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 3. Estilo dinámico del Navbar al hacer scroll
+  // 3. Estilo dinámico del Navbar al hacer scroll (Sólido y limpio)
   const navbar = document.getElementById('navbar');
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 40) {
-      navbar.classList.add('shadow-md', 'bg-white/98');
-      navbar.classList.remove('bg-white/95');
+    if (window.scrollY > 20) {
+      navbar.classList.add('shadow-md');
     } else {
-      navbar.classList.remove('shadow-md', 'bg-white/98');
-      navbar.classList.add('bg-white/95');
+      navbar.classList.remove('shadow-md');
     }
   });
 

@@ -10,6 +10,12 @@
   --epmi-dark: #0f172a;
 }
 
+/* Evitar desbordamiento horizontal en móviles */
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
@@ -23,6 +29,12 @@
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #0b4226;
+}
+
+/* Sticky Navbar 100% Opaco (Cero transparencias o textos filtrados al scrollear) */
+#navbar {
+  background-color: #ffffff !important;
+  opacity: 1 !important;
 }
 
 /* Shimmer Button Effect (Efecto de brillo de alta conversión) */
@@ -85,14 +97,6 @@
 .reveal-on-scroll.is-revealed {
   opacity: 1;
   transform: translateY(0);
-}
-
-/* Glassmorphism helpers */
-.glass-panel {
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 /* Focus accesibility outline */
