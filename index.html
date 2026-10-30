@@ -92,22 +92,13 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-20">
         
-        <!-- Logo EPMI Oficial -->
+        <!-- Logo EPMI Oficial del Brochure -->
         <a href="#hero" class="flex items-center gap-3 group">
-          <div class="relative w-11 h-11 flex items-center justify-center rounded-xl bg-gradient-to-br from-brand-700 to-brand-800 shadow-md group-hover:scale-105 transition-transform duration-300">
-            <!-- Icono E estilizado del brochure -->
-            <svg class="w-7 h-7 text-white" viewBox="0 0 100 100" fill="currentColor">
-              <path d="M50 10 A40 40 0 0 0 10 50 A40 40 0 0 0 50 90 A40 40 0 0 0 85 70 L72 62 A25 25 0 0 1 50 75 A25 25 0 0 1 25 50 A25 25 0 0 1 50 25 A25 25 0 0 1 72 38 L85 30 A40 40 0 0 0 50 10 Z" fill="#ffffff" />
-              <circle cx="58" cy="50" r="10" fill="#84cc16" />
-            </svg>
+          <img src="assets/images/logo-epmi.png" alt="EPMI S.A.C. - Gestión Integral de Residuos" class="h-14 w-auto object-contain group-hover:scale-105 transition-transform duration-300">
+          <div class="hidden sm:flex flex-col">
+            <span class="font-heading font-extrabold text-xl tracking-tight text-brand-800">EPMI S.A.C.</span>
+            <span class="text-[9px] tracking-wider uppercase font-semibold text-slate-500 -mt-1">R.A. EO-RS-00211-2022-MINAM</span>
           </div>
-          <div class="flex flex-col">
-            <span class="font-heading font-extrabold text-2xl tracking-tight text-brand-800 group-hover:text-brand-600 transition-colors">EPMI</span>
-            <span class="text-[10px] tracking-wider uppercase font-semibold text-slate-500 -mt-1">Ingeniería & Residuos</span>
-          </div>
-          <span class="hidden lg:inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-50 text-emerald-700 border border-emerald-200 ml-2">
-            EO-RS
-          </span>
         </a>
 
         <!-- Desktop Navigation Links -->
@@ -226,7 +217,7 @@
           <div class="relative mx-auto max-w-md lg:max-w-none">
             <div class="relative overflow-hidden rounded-2xl shadow-2xl border-4 border-white bg-slate-900 group">
               <!-- High-grade industrial waste management photo -->
-              <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=800&q=80" 
+              <img src="assets/images/hero-sorting-line.jpg" 
                    alt="Planta de segregación y gestión de residuos industriales EPMI" 
                    class="w-full h-80 sm:h-96 object-cover opacity-90 group-hover:scale-105 transition-transform duration-700 ease-out">
               <div class="absolute inset-0 bg-gradient-to-t from-brand-900/90 via-brand-900/40 to-transparent"></div>
@@ -278,43 +269,27 @@
         </p>
       </div>
 
-      <!-- Regulatory Badges Grid -->
+      <!-- Regulatory Badges Grid (Logos Reales del Brochure Pág. 6) -->
       <div class="grid grid-cols-2 md:grid-cols-4 gap-6 items-center justify-items-center">
         
         <!-- MINAM -->
-        <div class="flex items-center gap-3 p-3 rounded-lg border border-slate-100 hover:border-emerald-200 hover:bg-slate-50 transition-all w-full max-w-[220px] justify-center">
-          <div class="w-8 h-8 rounded bg-red-100 text-red-700 flex items-center justify-center font-bold text-xs">PERÚ</div>
-          <div class="text-left">
-            <div class="text-[11px] font-bold text-slate-900 leading-tight">MINAM</div>
-            <div class="text-[10px] text-slate-500 leading-tight">Ministerio del Ambiente</div>
-          </div>
-        </div>
-
-        <!-- OEFA -->
-        <div class="flex items-center gap-3 p-3 rounded-lg border border-slate-100 hover:border-emerald-200 hover:bg-slate-50 transition-all w-full max-w-[220px] justify-center">
-          <div class="w-8 h-8 rounded bg-blue-100 text-blue-800 flex items-center justify-center font-bold text-xs">OEFA</div>
-          <div class="text-left">
-            <div class="text-[11px] font-bold text-slate-900 leading-tight">OEFA</div>
-            <div class="text-[10px] text-slate-500 leading-tight">Fiscalización Ambiental</div>
-          </div>
+        <div class="flex items-center justify-center p-3 rounded-xl border border-slate-200 hover:border-emerald-300 hover:bg-slate-50 transition-all w-full max-w-[230px] h-16 bg-white shadow-xs">
+          <img src="assets/images/logo-minam.jpg" alt="MINAM - Ministerio del Ambiente" class="max-h-10 w-auto object-contain">
         </div>
 
         <!-- MTC -->
-        <div class="flex items-center gap-3 p-3 rounded-lg border border-slate-100 hover:border-emerald-200 hover:bg-slate-50 transition-all w-full max-w-[220px] justify-center">
-          <div class="w-8 h-8 rounded bg-red-100 text-red-700 flex items-center justify-center font-bold text-xs">MTC</div>
-          <div class="text-left">
-            <div class="text-[11px] font-bold text-slate-900 leading-tight">MTC</div>
-            <div class="text-[10px] text-slate-500 leading-tight">Transportes y Cargas</div>
-          </div>
+        <div class="flex items-center justify-center p-3 rounded-xl border border-slate-200 hover:border-emerald-300 hover:bg-slate-50 transition-all w-full max-w-[230px] h-16 bg-white shadow-xs">
+          <img src="assets/images/logo-mtc.jpg" alt="MTC - Ministerio de Transportes y Comunicaciones" class="max-h-10 w-auto object-contain">
         </div>
 
         <!-- Municipalidad de Lima -->
-        <div class="flex items-center gap-3 p-3 rounded-lg border border-slate-100 hover:border-emerald-200 hover:bg-slate-50 transition-all w-full max-w-[220px] justify-center">
-          <div class="w-8 h-8 rounded bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-xs">MML</div>
-          <div class="text-left">
-            <div class="text-[11px] font-bold text-slate-900 leading-tight">MUNICIPALIDAD</div>
-            <div class="text-[10px] text-slate-500 leading-tight">Metropolitana de Lima</div>
-          </div>
+        <div class="flex items-center justify-center p-3 rounded-xl border border-slate-200 hover:border-emerald-300 hover:bg-slate-50 transition-all w-full max-w-[230px] h-16 bg-white shadow-xs">
+          <img src="assets/images/logo-mml.jpg" alt="Municipalidad Metropolitana de Lima" class="max-h-10 w-auto object-contain">
+        </div>
+
+        <!-- OEFA -->
+        <div class="flex items-center justify-center p-3 rounded-xl border border-slate-200 hover:border-emerald-300 hover:bg-slate-50 transition-all w-full max-w-[230px] h-16 bg-white shadow-xs">
+          <img src="assets/images/logo-oefa.jpg" alt="OEFA - Organismo de Evaluación y Fiscalización Ambiental" class="max-h-10 w-auto object-contain">
         </div>
 
       </div>
@@ -344,7 +319,7 @@
         <!-- SERVICIO 1: Recolección y Transporte hacia Disposición Final -->
         <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group hover:-translate-y-1">
           <div class="relative h-48 overflow-hidden bg-slate-900">
-            <img src="https://images.unsplash.com/photo-1611284446314-60a58ac0deb9?auto=format&fit=crop&w=600&q=80" 
+            <img src="assets/images/servicio-recoleccion-transporte.jpg" 
                  alt="Transporte y recolección de residuos sólidos" 
                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
             <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
@@ -415,7 +390,7 @@
         <!-- SERVICIO 2: Comercialización de Residuos Aprovechables -->
         <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group hover:-translate-y-1">
           <div class="relative h-48 overflow-hidden bg-slate-900">
-            <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=600&q=80" 
+            <img src="assets/images/servicio-valorizacion.jpg" 
                  alt="Reciclaje y valorización de residuos aprovechables" 
                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
             <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
@@ -482,7 +457,7 @@
         <!-- SERVICIO 3: Destrucción de Materiales (Desmedros Notariales) -->
         <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group hover:-translate-y-1">
           <div class="relative h-48 overflow-hidden bg-slate-900">
-            <img src="https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=600&q=80" 
+            <img src="assets/images/servicio-destruccion-seguridad.jpg" 
                  alt="Destrucción notarial de materiales y desmedros ante SUNAT" 
                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
             <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
@@ -625,13 +600,13 @@
       
       <div class="text-center max-w-3xl mx-auto mb-14">
         <span class="inline-block px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 font-semibold text-xs uppercase tracking-wider mb-3">
-          Cobertura Multisectorial
+          Sectores de Origen (Brochure Pág. 2)
         </span>
         <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-slate-900 tracking-tight">
-          Sectores Industriales que Confían en EPMI
+          Sectores Atendidos según Marco Normativo
         </h2>
         <p class="mt-4 text-base text-slate-600">
-          Adaptamos nuestra operativa a los más estrictos estándares de seguridad y protocolos internos de cada industria.
+          Gestión integral de residuos provenientes de las actividades contempladas en nuestro registro autoritativo EO-RS:
         </p>
       </div>
 
@@ -679,8 +654,8 @@
           <div class="w-14 h-14 mx-auto rounded-2xl bg-emerald-50 text-emerald-700 flex items-center justify-center mb-4 group-hover:scale-110 group-hover:bg-brand-700 group-hover:text-white transition-all">
             <i data-lucide="store" class="w-7 h-7"></i>
           </div>
-          <h3 class="font-heading font-bold text-sm sm:text-base text-slate-900 mb-1">Retail & Especiales</h3>
-          <p class="text-xs text-slate-500">Grandes almacenes, centros comerciales y logística.</p>
+          <h3 class="font-heading font-bold text-sm sm:text-base text-slate-900 mb-1">Actividades Especiales</h3>
+          <p class="text-xs text-slate-500">Residuos de origen en actividades comerciales y especiales.</p>
         </div>
 
       </div>
@@ -820,7 +795,7 @@
         
         <div class="lg:col-span-5 relative">
           <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-slate-900">
-            <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=800&q=80" 
+            <img src="assets/images/nosotros-planta.jpg" 
                  alt="Compromiso ambiental de EPMI S.A.C." 
                  class="w-full h-96 object-cover opacity-90">
             <div class="absolute inset-0 bg-gradient-to-t from-brand-900/90 to-transparent"></div>
@@ -843,7 +818,7 @@
             Ingeniería Ambiental con Conciencia y Responsabilidad
           </h2>
           <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
-            La empresa <strong>EPMI S.A.C.</strong> es una empresa peruana dedicada a la gestión responsable del manejo de residuos sólidos con más de 5 años de experiencia. Brindamos soluciones integrales a la medida de nuestros clientes, reduciendo al mínimo la cantidad de residuos sólidos que terminarán en rellenos sanitarios mediante la valorización continua.
+            <strong>EPMI S.A.C.</strong> es una organización peruana dedicada a la gestión responsable del manejo de residuos sólidos con más de 5 años de experiencia. Brindamos soluciones integrales a la medida de nuestros clientes, reduciendo al mínimo la cantidad de residuos sólidos que terminarán en rellenos sanitarios mediante la valorización continua.
           </p>
 
           <!-- Grid Misión, Visión, Propósito -->
@@ -995,7 +970,7 @@
               </div>
               <div class="flex items-start gap-2.5">
                 <i data-lucide="user-check" class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5"></i>
-                <span class="text-xs text-slate-600 font-medium">Atención con ingenieros ambientales</span>
+                <span class="text-xs text-slate-600 font-medium">Atención por el equipo comercial</span>
               </div>
               <div class="flex items-start gap-2.5">
                 <i data-lucide="file-check" class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5"></i>
@@ -1019,15 +994,18 @@
         <!-- Columna 1: Brand & Descripción -->
         <div class="space-y-3">
           <div class="flex items-center gap-2.5">
-            <div class="w-8 h-8 rounded-lg bg-brand-700 flex items-center justify-center text-white">
-              <i data-lucide="leaf" class="w-4 h-4 text-brand-lime"></i>
+            <div class="bg-white p-1 rounded-lg shadow-xs inline-block">
+              <img src="assets/images/logo-epmi.png" alt="EPMI S.A.C." class="h-9 w-auto object-contain">
             </div>
-            <span class="font-heading font-extrabold text-xl text-white tracking-tight">EPMI S.A.C.</span>
+            <div class="flex flex-col">
+              <span class="font-heading font-extrabold text-lg text-white tracking-tight">EPMI S.A.C.</span>
+              <span class="text-[10px] text-emerald-400 font-mono">EO-RS-00211-2022-MINAM</span>
+            </div>
           </div>
           <p class="text-slate-400 leading-relaxed">
-            Empresa Operadora de Residuos Sólidos (EO-RS). Especializados en recolección, transporte, valorización y disposición final para la industria peruana.
+            EMPRESA EPMI SOCIEDAD ANÓNIMA CERRADA. Especializados en recolección, transporte, valorización y disposición final en el Perú.
           </p>
-          <span class="inline-block text-[11px] text-emerald-400 font-semibold">RUC: 20600000000 (EPMI S.A.C.)</span>
+          <span class="inline-block text-[11px] text-emerald-400 font-semibold font-mono">RUC: 20609336031</span>
         </div>
 
         <!-- Columna 2: Enlaces Rápidos -->
@@ -1074,8 +1052,7 @@
       </div>
 
       <div class="border-t border-slate-800 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-slate-500">
-        <p>&copy; 2026 EPMI S.A.C. Todos los derechos reservados. Desarrollado para GitHub Pages.</p>
-        <p class="text-[11px]">Diseño y Arquitectura de Alta Conversión B2B.</p>
+        <p>&copy; 2026 EPMI S.A.C. - RUC: 20609336031. Todos los derechos reservados.</p>
       </div>
     </div>
   </footer>
