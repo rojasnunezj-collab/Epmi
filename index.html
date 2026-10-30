@@ -963,107 +963,46 @@
           </div>
         </div>
 
-        <!-- Conversion Form Column (7 cols) -->
+        <!-- WhatsApp Direct Contact Card (7 cols) -->
         <div class="lg:col-span-7">
-          <div class="bg-white text-slate-800 p-6 sm:p-10 rounded-3xl shadow-2xl border border-slate-100">
-            <div class="mb-6">
-              <h3 class="font-heading font-extrabold text-2xl text-slate-900">Solicitud de Cotización B2B</h3>
-              <p class="text-xs sm:text-sm text-slate-500 mt-1">Complete los datos de su empresa y un asesor técnico responderá en menos de 2 horas hábiles.</p>
+          <div class="bg-white text-slate-800 p-8 sm:p-12 rounded-3xl shadow-2xl border border-slate-100 flex flex-col items-center justify-center text-center">
+            
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-100 text-brand-800 text-xs font-bold uppercase tracking-wider mb-4">
+              <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+              Canal Oficial de Atención Comercial
             </div>
 
-            <!-- Formulario Funcional con Formspree / Web3Forms -->
-            <form id="contact-form" action="https://formspree.io/f/xvgzgopq" method="POST" class="space-y-4">
-              
-              <!-- Hidden fields para configurar destino en Formspree -->
-              <input type="hidden" name="_subject" value="Nuevo Lead B2B - Cotización Web EPMI">
-              <input type="hidden" name="_replyto" id="hidden_replyto">
+            <h3 class="font-heading font-extrabold text-2xl sm:text-3xl text-slate-900 max-w-lg mb-3">
+              Cotice en Tiempo Real con Nuestro Equipo Técnico
+            </h3>
 
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <!-- Nombre -->
-                <div>
-                  <label for="nombre" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Nombre y Apellidos *</label>
-                  <input type="text" id="nombre" name="nombre" required 
-                         placeholder="Ej: Ing. Carlos Ramos" 
-                         class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-700 focus:border-brand-700 text-sm outline-none transition-all">
-                </div>
+            <p class="text-sm text-slate-600 max-w-md mb-8">
+              Reciba asesoría inmediata sobre recolección, transporte de residuos peligrosos, valorización y destrucción notarial ante SUNAT.
+            </p>
 
-                <!-- Empresa y RUC -->
-                <div>
-                  <label for="empresa" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Empresa / RUC *</label>
-                  <input type="text" id="empresa" name="empresa" required 
-                         placeholder="Ej: Minera del Centro S.A. / 20123456789" 
-                         class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-700 focus:border-brand-700 text-sm outline-none transition-all">
-                </div>
+            <!-- Imagen del Botón de WhatsApp (Por ahora solo imagen, lista para enlazar después) -->
+            <div class="w-full max-w-md mx-auto group transition-all duration-300 transform hover:scale-[1.02]">
+              <img src="assets/images/whatsapp-button.svg" 
+                   alt="Botón Oficial WhatsApp EPMI S.A.C." 
+                   class="w-full h-auto cursor-pointer drop-shadow-md hover:drop-shadow-xl transition-all duration-300">
+            </div>
+
+            <!-- Beneficios de la atención por WhatsApp -->
+            <div class="mt-8 pt-6 border-t border-slate-100 grid grid-cols-1 sm:grid-cols-3 gap-4 text-left w-full">
+              <div class="flex items-start gap-2.5">
+                <i data-lucide="clock" class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5"></i>
+                <span class="text-xs text-slate-600 font-medium">Respuesta promedio en menos de 15 minutos</span>
               </div>
-
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <!-- Correo Corporativo -->
-                <div>
-                  <label for="email" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Correo Corporativo *</label>
-                  <input type="email" id="email" name="email" required 
-                         placeholder="carlos.ramos@empresa.com" 
-                         class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-700 focus:border-brand-700 text-sm outline-none transition-all">
-                </div>
-
-                <!-- Teléfono / WhatsApp -->
-                <div>
-                  <label for="telefono" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Teléfono / WhatsApp *</label>
-                  <input type="tel" id="telefono" name="telefono" required 
-                         placeholder="+51 987 654 321" 
-                         class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-700 focus:border-brand-700 text-sm outline-none transition-all">
-                </div>
+              <div class="flex items-start gap-2.5">
+                <i data-lucide="user-check" class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5"></i>
+                <span class="text-xs text-slate-600 font-medium">Atención con ingenieros ambientales</span>
               </div>
-
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <!-- Tipo de Servicio Requerido -->
-                <div>
-                  <label for="servicio" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Servicio Requerido *</label>
-                  <select id="servicio" name="servicio" required 
-                          class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-700 focus:border-brand-700 text-sm outline-none transition-all bg-white">
-                    <option value="" disabled selected>Seleccione una opción...</option>
-                    <option value="Recoleccion y Transporte Peligrosos/No Peligrosos">Recolección & Transporte (Peligrosos / No Peligrosos)</option>
-                    <option value="Comercializacion y Valorizacion">Comercialización y Valorización (Reciclaje)</option>
-                    <option value="Destruccion Notarial SUNAT">Destrucción Notarial de Materiales (SUNAT)</option>
-                    <option value="Servicio Integral de Residuos">Gestión Integral de Planta (Servicio Completo)</option>
-                  </select>
-                </div>
-
-                <!-- Volumen Estimado / Frecuencia -->
-                <div>
-                  <label for="frecuencia" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Volumen / Frecuencia</label>
-                  <input type="text" id="frecuencia" name="frecuencia" 
-                         placeholder="Ej: 5 Toneladas mensuales / Retiro puntual" 
-                         class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-700 focus:border-brand-700 text-sm outline-none transition-all">
-                </div>
+              <div class="flex items-start gap-2.5">
+                <i data-lucide="file-check" class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5"></i>
+                <span class="text-xs text-slate-600 font-medium">Cotizaciones y hojas de seguridad</span>
               </div>
+            </div>
 
-              <!-- Mensaje / Detalles -->
-              <div>
-                <label for="mensaje" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Detalle del Requerimiento</label>
-                <textarea id="mensaje" name="mensaje" rows="3" 
-                          placeholder="Indique tipo de residuo, ubicación del punto de recojo y cualquier requerimiento específico de seguridad o certificación..." 
-                          class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-700 focus:border-brand-700 text-sm outline-none transition-all resize-none"></textarea>
-              </div>
-
-              <!-- Checkbox Política Privacidad -->
-              <div class="flex items-center gap-2 text-xs text-slate-500">
-                <input type="checkbox" id="politica" name="politica" required class="rounded text-brand-700 focus:ring-brand-700">
-                <label for="politica">Acepto el tratamiento de mis datos de contacto conforme a la Ley N° 29733 de Protección de Datos Personales.</label>
-              </div>
-
-              <!-- Botón Submit -->
-              <div>
-                <button type="submit" id="submit-btn" 
-                        class="w-full py-3.5 px-6 rounded-xl font-bold text-white bg-gradient-to-r from-brand-700 to-brand-600 hover:from-brand-800 hover:to-brand-700 shadow-lg shadow-brand-700/25 hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2">
-                  <i data-lucide="send" class="w-4 h-4"></i>
-                  <span id="btn-text">Enviar Solicitud de Cotización</span>
-                </button>
-              </div>
-
-              <!-- Feedback Messages -->
-              <div id="form-feedback" class="hidden p-4 rounded-xl text-xs font-medium text-center"></div>
-
-            </form>
           </div>
         </div>
 
